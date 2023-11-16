@@ -1,5 +1,6 @@
 package com.spongzi;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author spong
  * @date 2023/11/16
  */
+@MapperScan("com.spongzi.dao")
 @SpringBootApplication
 public class VideoPlaybackWebsiteApplication {
     public static void main(String[] args) {
