@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spongzi.dao.UserInfoDao">
+
+    <insert id="addUserInfo" parameterType="com.spongzi.domain.po.UserInfoPO">
+        insert into t_user_info (gender, avatar, userId, nick, sign, birth, createTime)
+        values (#{gender}, #{avatar}, #{userId}, #{nick}, #{sign}, #{birth}, #{createTime});
+    </insert>
+</mapper>
